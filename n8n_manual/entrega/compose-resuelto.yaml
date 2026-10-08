@@ -1,0 +1,80 @@
+name: n8n_manual
+services:
+  n8n:
+    depends_on:
+      worker:
+        condition: service_started
+        required: true
+    environment:
+      GENERIC_TIMEZONE: America/Argentina/Cordoba
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+      TZ: America/Argentina/Cordoba
+    image: docker.n8n.io/n8nio/n8n:latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 5678
+        published: "5678"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: n8n_data
+        target: /home/node/.n8n
+        volume: {}
+  target_a:
+    image: nginx:stable-alpine
+    networks:
+      default:
+        aliases:
+          - lab-a.test
+          - www.lab-a.test
+  target_b:
+    image: httpd:2.4-alpine
+    networks:
+      default:
+        aliases:
+          - lab-b.test
+          - www.lab-b.test
+  worker:
+    build:
+      context: /home/franco/Escritorio/TPI1/n8n_manual/worker
+      dockerfile: Dockerfile
+      args:
+        GO_IMAGE: golang:latest
+        HTTPX_VERSION: latest
+        SUBFINDER_VERSION: latest
+    networks:
+      default: null
+    volumes:
+      - type: bind
+        source: /home/franco/Escritorio/TPI1/n8n_manual/keys/ti1.pub
+        target: /run/ti1.pub
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/franco/Escritorio/TPI1/n8n_manual/scope.json
+        target: /opt/recon/scope.json
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /home/franco/Escritorio/TPI1/n8n_manual/fixtures
+        target: /opt/recon/fixtures
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: volume
+        source: evidence
+        target: /home/ti1/evidence
+        volume: {}
+networks:
+  default:
+    name: n8n_manual_default
+volumes:
+  evidence:
+    name: n8n_manual_evidence
+  n8n_data:
+    name: n8n_manual_n8n_data

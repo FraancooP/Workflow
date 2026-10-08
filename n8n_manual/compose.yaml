@@ -1,0 +1,46 @@
+services:
+  n8n:
+    image: ${N8N_IMAGE:-docker.n8n.io/n8nio/n8n:latest}
+    ports:
+      - "127.0.0.1:5678:5678"
+    environment:
+      TZ: America/Argentina/Cordoba
+      GENERIC_TIMEZONE: America/Argentina/Cordoba
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    depends_on:
+      - worker
+
+  worker:
+    build:
+      context: ./worker
+      args:
+        GO_IMAGE: ${GO_IMAGE:-golang:latest}
+        SUBFINDER_VERSION: ${SUBFINDER_VERSION:-latest}
+        HTTPX_VERSION: ${HTTPX_VERSION:-latest}
+    volumes:
+      - ./keys/ti1.pub:/run/ti1.pub:ro
+      - ./scope.json:/opt/recon/scope.json:ro
+      - ./fixtures:/opt/recon/fixtures:ro
+      - evidence:/home/ti1/evidence
+
+  target_a:
+    image: ${NGINX_IMAGE:-nginx:stable-alpine}
+    networks:
+      default:
+        aliases:
+          - lab-a.test
+          - www.lab-a.test
+
+  target_b:
+    image: ${APACHE_IMAGE:-httpd:2.4-alpine}
+    networks:
+      default:
+        aliases:
+          - lab-b.test
+          - www.lab-b.test
+
+volumes:
+  n8n_data:
+  evidence:

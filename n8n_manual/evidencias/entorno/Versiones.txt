@@ -1,0 +1,11 @@
+Aca la idea era registrar todas las versioens 
+de todo loq  uisamosa como docker, htppx, pero por temas de tiempo quedo sin hacerse.
+Componente	Versión observada
+Docker Engine	Completar
+Docker Compose	Completar
+n8n	Completar
+Python del trabajador	Completar
+Subfinder	Completar
+HTTPX de ProjectDiscovery	Completar
+Nginx	Completar
+Apache HTTP Server	Completar

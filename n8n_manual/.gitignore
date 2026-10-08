@@ -1,0 +1,39 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+/keys/*
+!/keys/*.pub
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Datos locales y salidas de ejecución
+/.n8n/
+/n8n_data/
+/evidence/
+*.log
+*.tmp
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+

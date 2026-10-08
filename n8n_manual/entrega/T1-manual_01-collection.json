@@ -1,0 +1,59 @@
+{
+  "target_id": "T1",
+  "run_id": "manual_01",
+  "scope": {
+    "domain": "lab-a.test",
+    "mode": "lab",
+    "authorized": true,
+    "authorization_note": "Contenedores locales del equipo",
+    "scheme": "http",
+    "port": 80,
+    "allowed_hosts": [
+      "lab-a.test",
+      "www.lab-a.test",
+      "off.lab-a.test"
+    ]
+  },
+  "collected_at": "2026-09-26T20:37:10.823321+00:00",
+  "raw": [
+    {
+      "value": "lab-a.test",
+      "source": "fixture_inventory"
+    },
+    {
+      "value": " WWW.LAB-A.TEST. ",
+      "source": "fixture_A"
+    },
+    {
+      "value": "www.lab-a.test",
+      "source": "fixture_B"
+    },
+    {
+      "value": "off.lab-a.test",
+      "source": "fixture_A"
+    },
+    {
+      "value": "otro.invalid",
+      "source": "fixture_B"
+    },
+    {
+      "value": "bad..lab-a.test",
+      "source": "fixture_B"
+    }
+  ],
+  "sources": {
+    "subfinder": {
+      "status": "not_applicable",
+      "duration_ms": 0
+    },
+    "crtsh": {
+      "status": "not_applicable",
+      "duration_ms": 0
+    },
+    "fixture": {
+      "status": "synthetic",
+      "duration_ms": 0
+    }
+  },
+  "collection_ms": 1
+}

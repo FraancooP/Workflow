@@ -1,0 +1,46 @@
+{
+  "T1": {
+    "domain": "lab-a.test",
+    "mode": "lab",
+    "authorized": true,
+    "authorization_note": "Contenedores locales del equipo",
+    "scheme": "http",
+    "port": 80,
+    "allowed_hosts": [
+      "lab-a.test",
+      "www.lab-a.test",
+      "off.lab-a.test"
+    ]
+  },
+  "T2": {
+    "domain": "lab-b.test",
+    "mode": "lab",
+    "authorized": true,
+    "authorization_note": "Contenedores locales del equipo",
+    "scheme": "http",
+    "port": 80,
+    "allowed_hosts": [
+      "lab-b.test",
+      "www.lab-b.test",
+      "off.lab-b.test"
+    ]
+  },
+  "P1": {
+    "domain": "reemplazar-a.invalid",
+    "mode": "public",
+    "authorized": false,
+    "authorization_note": "COMPLETAR con titular, alcance y fecha",
+    "scheme": "https",
+    "port": 443,
+    "allowed_hosts": []
+  },
+  "P2": {
+    "domain": "reemplazar-b.invalid",
+    "mode": "public",
+    "authorized": false,
+    "authorization_note": "COMPLETAR con titular, alcance y fecha",
+    "scheme": "https",
+    "port": 443,
+    "allowed_hosts": []
+  }
+}

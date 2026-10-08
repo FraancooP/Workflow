@@ -1,0 +1,26 @@
+[
+  {
+    "value": "lab-a.test",
+    "source": "fixture_inventory"
+  },
+  {
+    "value": " WWW.LAB-A.TEST. ",
+    "source": "fixture_A"
+  },
+  {
+    "value": "www.lab-a.test",
+    "source": "fixture_B"
+  },
+  {
+    "value": "off.lab-a.test",
+    "source": "fixture_A"
+  },
+  {
+    "value": "otro.invalid",
+    "source": "fixture_B"
+  },
+  {
+    "value": "bad..lab-a.test",
+    "source": "fixture_B"
+  }
+]
