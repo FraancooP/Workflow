@@ -1,0 +1,607 @@
+{
+  "schema_version": "1.1",
+  "target_id": "P1",
+  "run_id": "1791834519434_2e635842",
+  "status": "partial",
+  "collection_status": "partial",
+  "checks_status": "completed",
+  "check_performed": true,
+  "started_at": "2026-10-12T19:48:39.434Z",
+  "collected_at": "2026-10-12T19:49:59.247251+00:00",
+  "checks_finished_at": "2026-10-12T19:53:45.692610+00:00",
+  "result_prepared_at": "2026-10-12T19:59:20.950Z",
+  "scope": {
+    "domain": "vulnweb.com",
+    "mode": "public",
+    "authorized": true,
+    "authorization_note": "Laboratorio publico que nos dijo el profe. Enumeración pasiva sobre vulnweb.com y comprobación activa limitada a http://testphp.vulnweb.com:80/.",
+    "scheme": "http",
+    "port": 80,
+    "allowed_hosts": [
+      "testphp.vulnweb.com"
+    ]
+  },
+  "sources": {
+    "subfinder": {
+      "status": "ok",
+      "duration_ms": 77625,
+      "records": 16,
+      "parse_errors": [],
+      "evidence_file": "subfinder_process.json"
+    },
+    "crtsh": {
+      "status": "error",
+      "duration_ms": 1119,
+      "records": 0,
+      "parse_errors": [],
+      "evidence_file": "crtsh_process.json"
+    }
+  },
+  "provided_targets": [
+    "testphp.vulnweb.com"
+  ],
+  "counts": {
+    "raw": 17,
+    "rejected": 0,
+    "accepted_records": 17,
+    "duplicates": 1,
+    "unique_candidates": 16,
+    "authorized_hosts": 1,
+    "pending_authorization": 15,
+    "discovered_unique": 16,
+    "subfinder_unique": 16,
+    "crtsh_unique": 0,
+    "discovered_by_both": 0,
+    "provided_only": 0,
+    "checked_records": 1,
+    "dns_resolved": 1,
+    "http_responding": 0,
+    "http_no_response_observed": 1,
+    "http_inconclusive": 0
+  },
+  "timings_ms": {
+    "collection": 78750,
+    "normalization": 10,
+    "dns": 256,
+    "httpx": 5757,
+    "probe": 6015,
+    "elapsed_until_result": 641516
+  },
+  "raw": [
+    {
+      "value": "testhtml5.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "scanmalware",
+        "anubis",
+        "hackertarget"
+      ]
+    },
+    {
+      "value": "testphp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "scanmalware",
+        "hackertarget"
+      ]
+    },
+    {
+      "value": "tetphp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "estphp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "rest.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testasp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testaspnet.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testhp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "localhost.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "antivirus1.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "odincovo.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "virus.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "viruswall.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "www.test.php.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "www.virus.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "www.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testphp.vulnweb.com",
+      "source": "provided_target"
+    }
+  ],
+  "candidates": [
+    {
+      "host": "antivirus1.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "estphp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "localhost.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "odincovo.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "rest.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testasp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testaspnet.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testhp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testhtml5.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware",
+        "anubis",
+        "hackertarget"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testphp.vulnweb.com",
+      "sources": [
+        "subfinder",
+        "provided_target"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware",
+        "hackertarget"
+      ],
+      "discovered": true,
+      "provided_target": true
+    },
+    {
+      "host": "tetphp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "virus.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "viruswall.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.test.php.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.virus.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    }
+  ],
+  "authorized_hosts": [
+    {
+      "host": "testphp.vulnweb.com",
+      "sources": [
+        "subfinder",
+        "provided_target"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware",
+        "hackertarget"
+      ],
+      "discovered": true,
+      "provided_target": true
+    }
+  ],
+  "pending_authorization": [
+    {
+      "host": "antivirus1.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "estphp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "localhost.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "odincovo.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "rest.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testasp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testaspnet.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testhp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "testhtml5.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware",
+        "anubis",
+        "hackertarget"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "tetphp.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "virus.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "viruswall.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.test.php.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.virus.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.vulnweb.com",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    }
+  ],
+  "rejected": [],
+  "records": [
+    {
+      "host": "testphp.vulnweb.com",
+      "sources": [
+        "subfinder",
+        "provided_target"
+      ],
+      "requested_url": "http://testphp.vulnweb.com:80/",
+      "ips": [
+        "44.228.249.3"
+      ],
+      "dns_status": "resolved",
+      "http_state": "no_response_observed",
+      "http_status": null,
+      "http_observed": false
+    }
+  ],
+  "diagnostics": {
+    "httpx_status": "ok",
+    "parse_errors": [],
+    "message": null
+  }
+}

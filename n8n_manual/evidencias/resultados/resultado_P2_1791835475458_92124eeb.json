@@ -1,0 +1,470 @@
+{
+  "schema_version": "1.1",
+  "target_id": "P2",
+  "run_id": "1791835475458_92124eeb",
+  "status": "completed",
+  "collection_status": "completed",
+  "checks_status": "completed",
+  "check_performed": true,
+  "started_at": "2026-10-12T20:04:35.458Z",
+  "collected_at": "2026-10-12T20:05:07.262225+00:00",
+  "checks_finished_at": "2026-10-12T20:09:00.750058+00:00",
+  "result_prepared_at": "2026-10-12T20:10:34.077Z",
+  "scope": {
+    "domain": "testfire.net",
+    "mode": "public",
+    "authorized": true,
+    "authorization_note": "Laboratorio publico que nos dijo el profe. Enumeración pasiva sobre testfire.net y comprobación activa limitada a https://demo.testfire.net:443/.",
+    "scheme": "https",
+    "port": 443,
+    "allowed_hosts": [
+      "demo.testfire.net"
+    ]
+  },
+  "sources": {
+    "subfinder": {
+      "status": "ok",
+      "duration_ms": 10333,
+      "records": 7,
+      "parse_errors": [],
+      "evidence_file": "subfinder_process.json"
+    },
+    "crtsh": {
+      "status": "ok",
+      "duration_ms": 20543,
+      "records": 24,
+      "parse_errors": [],
+      "evidence_file": "crtsh_process.json"
+    }
+  },
+  "provided_targets": [
+    "demo.testfire.net"
+  ],
+  "counts": {
+    "raw": 32,
+    "rejected": 0,
+    "accepted_records": 32,
+    "duplicates": 25,
+    "unique_candidates": 7,
+    "authorized_hosts": 1,
+    "pending_authorization": 6,
+    "discovered_unique": 7,
+    "subfinder_unique": 7,
+    "crtsh_unique": 1,
+    "discovered_by_both": 1,
+    "provided_only": 0,
+    "checked_records": 1,
+    "dns_resolved": 1,
+    "http_responding": 1,
+    "http_no_response_observed": 0,
+    "http_inconclusive": 0
+  },
+  "timings_ms": {
+    "collection": 30878,
+    "normalization": 1,
+    "dns": 257,
+    "httpx": 1799,
+    "probe": 2059,
+    "elapsed_until_result": 358619
+  },
+  "raw": [
+    {
+      "value": "demo2.testfire.net",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "evil.testfire.net",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "ftp.testfire.net",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "localhost.testfire.net",
+      "source": "subfinder",
+      "providers": [
+        "scanmalware",
+        "anubis"
+      ]
+    },
+    {
+      "value": "www.testfire.net",
+      "source": "subfinder",
+      "providers": [
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "subfinder",
+      "providers": [
+        "scanmalware",
+        "shodanct",
+        "anubis",
+        "hackertarget"
+      ]
+    },
+    {
+      "value": "altoro.testfire.net",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 18538496290
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 18538496243
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 13272863493
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 13272863561
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 12612745319
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 12569138880
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 9693817420
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 9693817645
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 6986114028
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 6988451382
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 6940365281
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 6941239888
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 6941240558
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 6940365250
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2859410116
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2859410039
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2843694800
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2843694892
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2812634893
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2812635040
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2809560492
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 2809560557
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 1049513677
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "crtsh",
+      "certificate_id": 1046015751
+    },
+    {
+      "value": "demo.testfire.net",
+      "source": "provided_target"
+    }
+  ],
+  "candidates": [
+    {
+      "host": "altoro.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "demo.testfire.net",
+      "sources": [
+        "subfinder",
+        "crtsh",
+        "provided_target"
+      ],
+      "providers": [
+        "scanmalware",
+        "shodanct",
+        "anubis",
+        "hackertarget"
+      ],
+      "discovered": true,
+      "provided_target": true
+    },
+    {
+      "host": "demo2.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "evil.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "ftp.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "localhost.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware",
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    }
+  ],
+  "authorized_hosts": [
+    {
+      "host": "demo.testfire.net",
+      "sources": [
+        "subfinder",
+        "crtsh",
+        "provided_target"
+      ],
+      "providers": [
+        "scanmalware",
+        "shodanct",
+        "anubis",
+        "hackertarget"
+      ],
+      "discovered": true,
+      "provided_target": true
+    }
+  ],
+  "pending_authorization": [
+    {
+      "host": "altoro.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "demo2.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "evil.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "ftp.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "anubis",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "localhost.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "scanmalware",
+        "anubis"
+      ],
+      "discovered": true,
+      "provided_target": false
+    },
+    {
+      "host": "www.testfire.net",
+      "sources": [
+        "subfinder"
+      ],
+      "providers": [
+        "hackertarget",
+        "scanmalware"
+      ],
+      "discovered": true,
+      "provided_target": false
+    }
+  ],
+  "rejected": [],
+  "records": [
+    {
+      "host": "demo.testfire.net",
+      "sources": [
+        "subfinder",
+        "crtsh",
+        "provided_target"
+      ],
+      "requested_url": "https://demo.testfire.net:443/",
+      "ips": [
+        "65.61.137.117"
+      ],
+      "dns_status": "resolved",
+      "http_state": "response",
+      "http_status": 200,
+      "http_observed": true,
+      "title": "Altoro Mutual",
+      "webserver": "Apache-Coyote/1.1",
+      "tech": [
+        "Apache Tomcat",
+        "Java"
+      ],
+      "response_time": "1.065227931s"
+    }
+  ],
+  "diagnostics": {
+    "httpx_status": "ok",
+    "parse_errors": [],
+    "message": null
+  }
+}
