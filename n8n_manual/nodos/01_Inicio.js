@@ -1,4 +1,4 @@
-const target_id = 'T1';
+const target_id = 'P2';
 
 if (!/^(T1|T2|P1|P2)$/.test(target_id)) {
   throw new Error('Identificador de target no permitido');

@@ -1,0 +1,168 @@
+{
+  "target_id": "P1",
+  "run_id": "publico_p1_01",
+  "scope": {
+    "domain": "vulnweb.com",
+    "mode": "public",
+    "authorized": true,
+    "authorization_note": "Laboratorio publico que nos dijo el profe. Enumeración pasiva sobre vulnweb.com y comprobación activa limitada a http://testphp.vulnweb.com:80/.",
+    "scheme": "http",
+    "port": 80,
+    "allowed_hosts": [
+      "testphp.vulnweb.com"
+    ]
+  },
+  "collection_started_at": "2026-10-10T20:42:03.993882+00:00",
+  "collected_at": "2026-10-10T20:42:40.309454+00:00",
+  "collection_status": "partial",
+  "raw": [
+    {
+      "value": "testaspnet.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "www.test.php.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "www.virus.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "www.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testasp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testphp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "scanmalware",
+        "hackertarget"
+      ]
+    },
+    {
+      "value": "tetphp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "localhost.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "odincovo.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "viruswall.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "antivirus1.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "estphp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "rest.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testhtml5.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis",
+        "hackertarget",
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "virus.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "anubis"
+      ]
+    },
+    {
+      "value": "testhp.vulnweb.com",
+      "source": "subfinder",
+      "providers": [
+        "scanmalware"
+      ]
+    },
+    {
+      "value": "testphp.vulnweb.com",
+      "source": "provided_target"
+    }
+  ],
+  "sources": {
+    "subfinder": {
+      "status": "ok",
+      "duration_ms": 35159,
+      "records": 16,
+      "parse_errors": [],
+      "evidence_file": "subfinder_process.json"
+    },
+    "crtsh": {
+      "status": "error",
+      "duration_ms": 1154,
+      "records": 0,
+      "parse_errors": [],
+      "evidence_file": "crtsh_process.json"
+    }
+  },
+  "provided_targets": [
+    "testphp.vulnweb.com"
+  ],
+  "collection_ms": 36316
+}

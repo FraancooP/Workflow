@@ -26,21 +26,25 @@
     ]
   },
   "P1": {
-    "domain": "reemplazar-a.invalid",
+    "domain": "vulnweb.com",
     "mode": "public",
-    "authorized": false,
-    "authorization_note": "COMPLETAR con titular, alcance y fecha",
-    "scheme": "https",
-    "port": 443,
-    "allowed_hosts": []
+    "authorized": true,
+    "authorization_note": "Laboratorio publico que nos dijo el profe. Enumeración pasiva sobre vulnweb.com y comprobación activa limitada a http://testphp.vulnweb.com:80/.",
+    "scheme": "http",
+    "port": 80,
+    "allowed_hosts": [
+      "testphp.vulnweb.com"
+    ]
   },
   "P2": {
-    "domain": "reemplazar-b.invalid",
+    "domain": "testfire.net",
     "mode": "public",
-    "authorized": false,
-    "authorization_note": "COMPLETAR con titular, alcance y fecha",
+    "authorized": true,
+    "authorization_note": "Laboratorio publico que nos dijo el profe. Enumeración pasiva sobre testfire.net y comprobación activa limitada a https://demo.testfire.net:443/.",
     "scheme": "https",
     "port": 443,
-    "allowed_hosts": []
+    "allowed_hosts": [
+      "demo.testfire.net"
+    ]
   }
 }

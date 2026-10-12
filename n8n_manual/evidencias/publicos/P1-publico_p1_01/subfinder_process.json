@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "returncode": 0,
+  "stdout": "{\"host\":\"testaspnet.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\",\"hackertarget\",\"scanmalware\"]}\n{\"host\":\"www.test.php.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"www.virus.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"www.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\",\"hackertarget\",\"scanmalware\"]}\n{\"host\":\"testasp.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\",\"hackertarget\",\"scanmalware\"]}\n{\"host\":\"testphp.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\",\"scanmalware\",\"hackertarget\"]}\n{\"host\":\"tetphp.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"localhost.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"scanmalware\"]}\n{\"host\":\"odincovo.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"viruswall.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"antivirus1.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"estphp.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"rest.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\",\"hackertarget\",\"scanmalware\"]}\n{\"host\":\"testhtml5.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\",\"hackertarget\",\"scanmalware\"]}\n{\"host\":\"virus.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"anubis\"]}\n{\"host\":\"testhp.vulnweb.com\",\"input\":\"vulnweb.com\",\"sources\":[\"scanmalware\"]}\n",
+  "stderr": "",
+  "duration_ms": 35159,
+  "command": [
+    "/usr/local/bin/subfinder",
+    "-d",
+    "vulnweb.com",
+    "-silent",
+    "-json",
+    "-cs",
+    "-duc",
+    "-rl",
+    "2",
+    "-timeout",
+    "10",
+    "-max-time",
+    "2"
+  ],
+  "parse_errors": []
+}
